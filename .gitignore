@@ -1,0 +1,56 @@
+# Frappe/ERPNext specific
+sites/*/private/
+sites/*/public/files/
+sites/*/logs/
+sites/*/task-logs/
+sites/*/locks/
+sites/*/pid/
+sites/*/backups/
+sites/*/site_config.json
+sites/common_site_config.json
+sites/apps.txt
+sites/assets/
+sites/.build
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+*.dump
+*.db
+
+# Logs
+logs/
+*.log

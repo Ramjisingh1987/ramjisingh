@@ -1,0 +1,17 @@
+{
+ "db_name": "_8f6a3f64b001a75d",
+ "db_password": "oD8N3FOcbI4j7Q7a",
+ "db_type": "mariadb",
+ "domains": [
+  "erp.tilangi.com"
+ ],
+ "maintenance_mode": 0,
+ "max_email_attachment_size": "10485760",
+ "max_file_size": "10485760",
+ "pause_scheduler": false,
+ "server_script_enabled": 1,
+ "time_zone": "Africa/Lagos",
+ "user_type_doctype_limit": {
+  "employee_self_service": 40
+ }
+}{"server_script_enabled": 1}
