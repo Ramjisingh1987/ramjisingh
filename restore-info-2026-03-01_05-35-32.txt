@@ -1,0 +1,19 @@
+ERPNext Backup Information
+==========================
+Site: erp.tilangi.com
+Date: 2026-03-01_05-35-32
+Database: _8f6a3f64b001a75d
+Files:
+  - database-2026-03-01_05-35-32.sql.gz (Database dump)
+  - site-config-2026-03-01_05-35-32.json (Site configuration)
+  - public-files-2026-03-01_05-35-32.tar.gz (Public files)
+  - private-files-2026-03-01_05-35-32.tar.gz (Private files)
+
+RESTORE INSTRUCTIONS:
+1. Extract files to your bench directory
+2. Create database: mysql -u root -p -e "CREATE DATABASE _8f6a3f64b001a75d;"
+3. Import database: gunzip < database-2026-03-01_05-35-32.sql.gz | mysql -u _8f6a3f64b001a75d -p _8f6a3f64b001a75d
+4. Copy site-config-2026-03-01_05-35-32.json to sites/erp.tilangi.com/site_config.json
+5. Extract public files: tar -xzf public-files-2026-03-01_05-35-32.tar.gz -C sites/erp.tilangi.com/
+6. Extract private files: tar -xzf private-files-2026-03-01_05-35-32.tar.gz -C sites/erp.tilangi.com/private/
+7. Run: bench --site erp.tilangi.com migrate
